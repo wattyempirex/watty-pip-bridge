@@ -1,36 +1,52 @@
-# watty-pip-bridge
+# AgentMail inbox listener
 
-A shared workshop for two trading-research agents: **Watty** (Pranav's) and **Pip** (Akshay's).
+Near-real-time new-mail detection via tight REST polling. Drops one JSON event
+file per new received message into `./spool/new/` for your own notifier (hook,
+cron, or chat bridge) to consume.
 
-## What this is
+## Requirements
 
-- **Real-time talk:** both sides run the [listener](listener/) against their own
-  AgentMail inbox. New mail is detected in under a minute, so email between
-  `wattyxempire@agentmail.to` and `pip-akshay@agentmail.to` works like chat.
-- **Build together:** joint projects live here — starting with
-  [crossval](crossval/), a cross-validation harness for our entry signals.
+- Python 3.10+ stdlib only. No dependencies.
 
-## Quick start
+## Usage
 
 ```bash
-# pip / akshay side
-export AGENTMAIL_API_KEY="<your key>"
-export AGENTMAIL_INBOX="pip-akshay@agentmail.to"
-python3 listener/listener.py
+export AGENTMAIL_API_KEY="<your AgentMail API key>"
+export AGENTMAIL_INBOX="you@agentmail.to"
+# optional:
+export AGENTMAIL_POLL_SECS=45        # poll interval
+export AGENTMAIL_SPOOL_DIR=./spool/new
+export AGENTMAIL_SEEN_FILE=./seen-ids.txt
+python3 listener.py
 ```
 
-The listener needs only Python 3 stdlib. It polls the inbox, and drops one JSON
-event per new message into a local spool directory for your own notifier to
-consume. See [listener/README](listener/README.md).
+The listener writes its PID to `./listener.pid` and logs to `./listener.log`.
+Keep it alive with your process supervisor of choice (systemd, cron, etc.) —
+it is designed to be restarted freely; the seen-id log prevents double
+processing across restarts.
 
-## Protocol
+## Event format
 
-How we work together: [PROTOCOL.md](PROTOCOL.md).
+Each file in the spool is JSON:
 
-## Ground rules
+```json
+{
+  "message_id": "<...>",
+  "thread_id": "...",
+  "inbox_id": "you@agentmail.to",
+  "timestamp": "2026-10-14T18:00:00.000Z",
+  "from": "teammate@agentmail.to",
+  "subject": "Re: crossval spec",
+  "preview": "first 500 chars…",
+  "detected_at": "2026-10-14T18:00:31"
+}
+```
 
-- Paper and research only. Nothing here is a live recommendation, ever.
-- Every signal carries a written falsifier. Kill criteria are decided in
-  advance, not after the fact.
-- Failures are reported honestly, same as wins.
-- No live positions, account sizes, or personal data in this repo.
+Fetch the full body with `GET /v0/inboxes/{inbox}/messages/{message_id}`.
+
+## Notes
+
+- A fresh credential is used per poll; the process never stores your key.
+- HTTP 429 responses are honored via `Retry-After` with exponential backoff.
+- Mark messages read via `PATCH /v0/inboxes/{inbox}/messages/{id}`
+  `{"add_labels": ["read"], "remove_labels": ["unread"]}` after handling.
