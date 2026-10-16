@@ -1,0 +1,330 @@
+[
+ {
+  "ticker": "MU",
+  "trigger": "2025-03-28",
+  "entry": "2025-03-31",
+  "reason": "stop",
+  "gross": -1096.09,
+  "net": -1171.09
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-04-03",
+  "entry": "2025-04-04",
+  "reason": "stop",
+  "gross": 407.15,
+  "net": 332.15
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-04-04",
+  "entry": "2025-04-07",
+  "reason": "time",
+  "gross": 275.13,
+  "net": 200.13
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-04-10",
+  "entry": "2025-04-11",
+  "reason": "time",
+  "gross": -317.4,
+  "net": -392.4
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-07-14",
+  "entry": "2025-07-15",
+  "reason": "stop",
+  "gross": -441.86,
+  "net": -516.86
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2025-07-31",
+  "entry": "2025-08-01",
+  "reason": "stop",
+  "gross": -130.89,
+  "net": -205.89
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2025-08-20",
+  "entry": "2025-08-21",
+  "reason": "time",
+  "gross": 868.41,
+  "net": 793.41
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-09-24",
+  "entry": "2025-09-25",
+  "reason": "time",
+  "gross": 1269.82,
+  "net": 1194.82
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-10-10",
+  "entry": "2025-10-13",
+  "reason": "time",
+  "gross": 528.62,
+  "net": 453.62
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-10-27",
+  "entry": "2025-10-28",
+  "reason": "time",
+  "gross": -145.86,
+  "net": -220.86
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-10-30",
+  "entry": "2025-10-31",
+  "reason": "time",
+  "gross": 458.33,
+  "net": 383.33
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-11-13",
+  "entry": "2025-11-14",
+  "reason": "time",
+  "gross": -1211.59,
+  "net": -1286.59
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-11-20",
+  "entry": "2025-11-21",
+  "reason": "time",
+  "gross": 1179.4,
+  "net": 1104.4
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-12-01",
+  "entry": "2025-12-02",
+  "reason": "time",
+  "gross": 389.13,
+  "net": 314.13
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-12-03",
+  "entry": "2025-12-04",
+  "reason": "time",
+  "gross": 1035.53,
+  "net": 960.53
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2025-12-12",
+  "entry": "2025-12-15",
+  "reason": "time",
+  "gross": 1216.97,
+  "net": 1141.97
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-01-23",
+  "entry": "2026-01-26",
+  "reason": "time",
+  "gross": 922.06,
+  "net": 847.06
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-02-04",
+  "entry": "2026-02-05",
+  "reason": "time",
+  "gross": 592.59,
+  "net": 517.59
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-02-10",
+  "entry": "2026-02-11",
+  "reason": "time",
+  "gross": 112.88,
+  "net": 37.88
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-02-24",
+  "entry": "2026-02-25",
+  "reason": "time",
+  "gross": -507.53,
+  "net": -582.53
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-03-05",
+  "entry": "2026-03-06",
+  "reason": "time",
+  "gross": 1113.53,
+  "net": 1038.53
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-03-20",
+  "entry": "2026-03-23",
+  "reason": "stop",
+  "gross": -920.0,
+  "net": -995.0
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2026-03-23",
+  "entry": "2026-03-24",
+  "reason": "time",
+  "gross": -730.37,
+  "net": -805.37
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-03-26",
+  "entry": "2026-03-27",
+  "reason": "stop",
+  "gross": -757.16,
+  "net": -832.16
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-04-15",
+  "entry": "2026-04-16",
+  "reason": "time",
+  "gross": 385.92,
+  "net": 310.92
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-04-23",
+  "entry": "2026-04-24",
+  "reason": "time",
+  "gross": 670.5,
+  "net": 595.5
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2026-05-15",
+  "entry": "2026-05-18",
+  "reason": "time",
+  "gross": 1425.52,
+  "net": 1350.52
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2026-06-04",
+  "entry": "2026-06-05",
+  "reason": "time",
+  "gross": 2004.83,
+  "net": 1929.83
+ },
+ {
+  "ticker": "SNDK",
+  "trigger": "2026-06-10",
+  "entry": "2026-06-11",
+  "reason": "time",
+  "gross": 1191.36,
+  "net": 1116.36
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-06-26",
+  "entry": "2026-06-29",
+  "reason": "time",
+  "gross": -1367.19,
+  "net": -1442.19
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-02",
+  "entry": "2026-07-06",
+  "reason": "time",
+  "gross": -377.93,
+  "net": -452.93
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-13",
+  "entry": "2026-07-14",
+  "reason": "stop",
+  "gross": -615.24,
+  "net": -690.24
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-16",
+  "entry": "2026-07-17",
+  "reason": "time",
+  "gross": 619.82,
+  "net": 544.82
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-17",
+  "entry": "2026-07-20",
+  "reason": "time",
+  "gross": 285.47,
+  "net": 210.47
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-24",
+  "entry": "2026-07-27",
+  "reason": "stop",
+  "gross": -677.43,
+  "net": -752.43
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-27",
+  "entry": "2026-07-28",
+  "reason": "stop",
+  "gross": -758.72,
+  "net": -833.72
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-07-28",
+  "entry": "2026-07-29",
+  "reason": "time",
+  "gross": 1546.74,
+  "net": 1471.74
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-08-05",
+  "entry": "2026-08-06",
+  "reason": "time",
+  "gross": 565.5,
+  "net": 490.5
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-08-06",
+  "entry": "2026-08-07",
+  "reason": "time",
+  "gross": 787.53,
+  "net": 712.53
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-08-07",
+  "entry": "2026-08-10",
+  "reason": "time",
+  "gross": 1295.54,
+  "net": 1220.54
+ },
+ {
+  "ticker": "MU",
+  "trigger": "2026-10-06",
+  "entry": "2026-10-07",
+  "reason": "time",
+  "gross": -942.43,
+  "net": -1017.43
+ }
+]
