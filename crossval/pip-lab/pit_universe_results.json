@@ -1,0 +1,613 @@
+{
+  "status": "COMPLETED",
+  "paper_research_only": true,
+  "sanity": {
+    "n_trades": 434,
+    "wins": 181,
+    "win_rate": 0.4171,
+    "net_pl_total": 14698.66,
+    "net_per_trade": 33.87,
+    "stops": 189,
+    "time_exits": 245
+  },
+  "coverage": {
+    "AMKR": 1011,
+    "ASML": 1011,
+    "ADI": 1011,
+    "AZTA": 1011,
+    "ENTG": 1011,
+    "IPGP": 1011,
+    "KLAC": 1011,
+    "LSCC": 1011,
+    "MRVL": 1011,
+    "MCHP": 1011,
+    "MPWR": 1011,
+    "NXPI": 1011,
+    "ON": 1011,
+    "POWI": 1011,
+    "SLAB": 1011,
+    "SWKS": 1011,
+    "TER": 1011,
+    "TXN": 1011,
+    "IIVI": 1011
+  },
+  "reference_tickers": [
+    "PLTR",
+    "SNOW",
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "NFLX",
+    "COHR",
+    "GLW",
+    "AMD",
+    "AMAT",
+    "AVGO",
+    "INTC",
+    "LRCX",
+    "MU",
+    "NVDA",
+    "QCOM",
+    "TSM"
+  ],
+  "coverage_excluded_per_ticker": {
+    "1pct": {
+      "SKHY": {
+        "n_trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "net_pl_total": -490.15,
+        "net_per_trade": -490.15,
+        "stops": 1,
+        "time_exits": 0
+      },
+      "SNDK": {
+        "n_trades": 13,
+        "wins": 7,
+        "win_rate": 0.5385,
+        "net_pl_total": 14696.09,
+        "net_per_trade": 1130.47,
+        "stops": 5,
+        "time_exits": 8
+      },
+      "ARM": {
+        "n_trades": 23,
+        "wins": 12,
+        "win_rate": 0.5217,
+        "net_pl_total": 5963.39,
+        "net_per_trade": 259.28,
+        "stops": 10,
+        "time_exits": 13
+      }
+    },
+    "20bps": {
+      "SKHY": {
+        "n_trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "net_pl_total": -430.15,
+        "net_per_trade": -430.15,
+        "stops": 1,
+        "time_exits": 0
+      },
+      "SNDK": {
+        "n_trades": 13,
+        "wins": 8,
+        "win_rate": 0.6154,
+        "net_pl_total": 15476.09,
+        "net_per_trade": 1190.47,
+        "stops": 5,
+        "time_exits": 8
+      },
+      "ARM": {
+        "n_trades": 23,
+        "wins": 12,
+        "win_rate": 0.5217,
+        "net_pl_total": 7343.39,
+        "net_per_trade": 319.28,
+        "stops": 10,
+        "time_exits": 13
+      }
+    }
+  },
+  "coverage_excluded_delta": {
+    "1pct": {
+      "n_trades": 37,
+      "wins": 19,
+      "win_rate": 0.5135,
+      "net_pl_total": 20169.33,
+      "net_per_trade": 545.12,
+      "stops": 16,
+      "time_exits": 21
+    },
+    "20bps": {
+      "n_trades": 37,
+      "wins": 20,
+      "win_rate": 0.5405,
+      "net_pl_total": 22389.33,
+      "net_per_trade": 605.12,
+      "stops": 16,
+      "time_exits": 21
+    }
+  },
+  "refused": [],
+  "m2_interpretation_band": "SEVERE",
+  "disclosures": [
+    "Frozen dropped list contains 19 names (18 data_pit plus IIVI), not the labeled 20.",
+    "QRVO and WOLF excluded as pre-registered; WOLF exclusion flatters dropped results.",
+    "Secondary frozen map excludes all watchlist-only names.",
+    "Universe list dated Aug 2022, about two months before window."
+  ],
+  "results": {
+    "primary_no_filter": {
+      "1pct": {
+        "dropped": {
+          "n_trades": 346,
+          "wins": 142,
+          "win_rate": 0.4104,
+          "net_pl_total": -3097.06,
+          "net_per_trade": -8.95,
+          "stops": 161,
+          "time_exits": 185,
+          "tickers": [
+            "AMKR",
+            "ASML",
+            "ADI",
+            "AZTA",
+            "ENTG",
+            "IPGP",
+            "KLAC",
+            "LSCC",
+            "MRVL",
+            "MCHP",
+            "MPWR",
+            "NXPI",
+            "ON",
+            "POWI",
+            "SLAB",
+            "SWKS",
+            "TER",
+            "TXN",
+            "IIVI"
+          ]
+        },
+        "watchlist_only": {
+          "n_trades": 260,
+          "wins": 106,
+          "win_rate": 0.4077,
+          "net_pl_total": 17418.95,
+          "net_per_trade": 67.0,
+          "stops": 112,
+          "time_exits": 148,
+          "tickers": [
+            "SKHY",
+            "PLTR",
+            "SNOW",
+            "SNDK",
+            "ARM",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW"
+          ]
+        },
+        "overlap": {
+          "n_trades": 211,
+          "wins": 94,
+          "win_rate": 0.4455,
+          "net_pl_total": 17449.04,
+          "net_per_trade": 82.7,
+          "stops": 93,
+          "time_exits": 118,
+          "tickers": [
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "reference_watchlist": {
+          "n_trades": 434,
+          "wins": 181,
+          "win_rate": 0.4171,
+          "net_pl_total": 14698.66,
+          "net_per_trade": 33.87,
+          "stops": 189,
+          "time_exits": 245,
+          "tickers": [
+            "PLTR",
+            "SNOW",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW",
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "interpretation_comparator": {
+          "n_trades": 434,
+          "wins": 181,
+          "win_rate": 0.4171,
+          "net_pl_total": 14698.66,
+          "net_per_trade": 33.87,
+          "stops": 189,
+          "time_exits": 245
+        },
+        "interpretation_band": "SEVERE",
+        "pit_total": {
+          "n_trades": 557,
+          "wins": 236,
+          "win_rate": 0.4237,
+          "net_pl_total": 14351.98,
+          "net_per_trade": 25.77,
+          "stops": 254,
+          "time_exits": 303
+        }
+      },
+      "20bps": {
+        "dropped": {
+          "n_trades": 346,
+          "wins": 152,
+          "win_rate": 0.4393,
+          "net_pl_total": 17662.94,
+          "net_per_trade": 51.05,
+          "stops": 161,
+          "time_exits": 185,
+          "tickers": [
+            "AMKR",
+            "ASML",
+            "ADI",
+            "AZTA",
+            "ENTG",
+            "IPGP",
+            "KLAC",
+            "LSCC",
+            "MRVL",
+            "MCHP",
+            "MPWR",
+            "NXPI",
+            "ON",
+            "POWI",
+            "SLAB",
+            "SWKS",
+            "TER",
+            "TXN",
+            "IIVI"
+          ]
+        },
+        "watchlist_only": {
+          "n_trades": 260,
+          "wins": 118,
+          "win_rate": 0.4538,
+          "net_pl_total": 33018.95,
+          "net_per_trade": 127.0,
+          "stops": 112,
+          "time_exits": 148,
+          "tickers": [
+            "SKHY",
+            "PLTR",
+            "SNOW",
+            "SNDK",
+            "ARM",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW"
+          ]
+        },
+        "overlap": {
+          "n_trades": 211,
+          "wins": 97,
+          "win_rate": 0.4597,
+          "net_pl_total": 30109.04,
+          "net_per_trade": 142.7,
+          "stops": 93,
+          "time_exits": 118,
+          "tickers": [
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "reference_watchlist": {
+          "n_trades": 434,
+          "wins": 195,
+          "win_rate": 0.4493,
+          "net_pl_total": 40738.66,
+          "net_per_trade": 93.87,
+          "stops": 189,
+          "time_exits": 245,
+          "tickers": [
+            "PLTR",
+            "SNOW",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW",
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "interpretation_comparator": {
+          "n_trades": 434,
+          "wins": 195,
+          "win_rate": 0.4493,
+          "net_pl_total": 40738.66,
+          "net_per_trade": 93.87,
+          "stops": 189,
+          "time_exits": 245
+        },
+        "interpretation_band": "MODEST",
+        "pit_total": {
+          "n_trades": 557,
+          "wins": 249,
+          "win_rate": 0.447,
+          "net_pl_total": 47771.98,
+          "net_per_trade": 85.77,
+          "stops": 254,
+          "time_exits": 303
+        }
+      }
+    },
+    "secondary_v3_1": {
+      "1pct": {
+        "dropped": {
+          "n_trades": 235,
+          "wins": 93,
+          "win_rate": 0.3957,
+          "net_pl_total": -1093.23,
+          "net_per_trade": -4.65,
+          "stops": 107,
+          "time_exits": 128,
+          "tickers": [
+            "AMKR",
+            "ADI",
+            "AZTA",
+            "IPGP",
+            "LSCC",
+            "MRVL",
+            "MCHP",
+            "MPWR",
+            "NXPI",
+            "ON",
+            "POWI",
+            "SLAB",
+            "SWKS",
+            "TXN"
+          ]
+        },
+        "watchlist_only": {
+          "n_trades": 0,
+          "wins": 0,
+          "win_rate": null,
+          "net_pl_total": 0,
+          "net_per_trade": null,
+          "stops": 0,
+          "time_exits": 0,
+          "tickers": []
+        },
+        "overlap": {
+          "n_trades": 169,
+          "wins": 75,
+          "win_rate": 0.4438,
+          "net_pl_total": 17088.91,
+          "net_per_trade": 101.12,
+          "stops": 75,
+          "time_exits": 94,
+          "tickers": [
+            "AMD",
+            "AVGO",
+            "INTC",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "reference_watchlist": {
+          "n_trades": 434,
+          "wins": 181,
+          "win_rate": 0.4171,
+          "net_pl_total": 14698.66,
+          "net_per_trade": 33.87,
+          "stops": 189,
+          "time_exits": 245,
+          "tickers": [
+            "PLTR",
+            "SNOW",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW",
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "interpretation_comparator": {
+          "n_trades": 434,
+          "wins": 181,
+          "win_rate": 0.4171,
+          "net_pl_total": 14698.66,
+          "net_per_trade": 33.87,
+          "stops": 189,
+          "time_exits": 245
+        },
+        "interpretation_band": "SEVERE",
+        "pit_total": {
+          "n_trades": 404,
+          "wins": 168,
+          "win_rate": 0.4158,
+          "net_pl_total": 15995.68,
+          "net_per_trade": 39.59,
+          "stops": 182,
+          "time_exits": 222
+        }
+      },
+      "20bps": {
+        "dropped": {
+          "n_trades": 320,
+          "wins": 139,
+          "win_rate": 0.4344,
+          "net_pl_total": 19146.48,
+          "net_per_trade": 59.83,
+          "stops": 149,
+          "time_exits": 171,
+          "tickers": [
+            "AMKR",
+            "ASML",
+            "ADI",
+            "AZTA",
+            "ENTG",
+            "IPGP",
+            "KLAC",
+            "LSCC",
+            "MRVL",
+            "MCHP",
+            "MPWR",
+            "NXPI",
+            "ON",
+            "POWI",
+            "SLAB",
+            "SWKS",
+            "TER",
+            "TXN"
+          ]
+        },
+        "watchlist_only": {
+          "n_trades": 0,
+          "wins": 0,
+          "win_rate": null,
+          "net_pl_total": 0,
+          "net_per_trade": null,
+          "stops": 0,
+          "time_exits": 0,
+          "tickers": []
+        },
+        "overlap": {
+          "n_trades": 211,
+          "wins": 97,
+          "win_rate": 0.4597,
+          "net_pl_total": 30109.04,
+          "net_per_trade": 142.7,
+          "stops": 93,
+          "time_exits": 118,
+          "tickers": [
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "reference_watchlist": {
+          "n_trades": 434,
+          "wins": 195,
+          "win_rate": 0.4493,
+          "net_pl_total": 40738.66,
+          "net_per_trade": 93.87,
+          "stops": 189,
+          "time_exits": 245,
+          "tickers": [
+            "PLTR",
+            "SNOW",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "NFLX",
+            "COHR",
+            "GLW",
+            "AMD",
+            "AMAT",
+            "AVGO",
+            "INTC",
+            "LRCX",
+            "MU",
+            "NVDA",
+            "QCOM",
+            "TSM"
+          ]
+        },
+        "interpretation_comparator": {
+          "n_trades": 434,
+          "wins": 195,
+          "win_rate": 0.4493,
+          "net_pl_total": 40738.66,
+          "net_per_trade": 93.87,
+          "stops": 189,
+          "time_exits": 245
+        },
+        "interpretation_band": "MODEST",
+        "pit_total": {
+          "n_trades": 531,
+          "wins": 236,
+          "win_rate": 0.4444,
+          "net_pl_total": 49255.52,
+          "net_per_trade": 92.76,
+          "stops": 242,
+          "time_exits": 289
+        }
+      }
+    }
+  }
+}
