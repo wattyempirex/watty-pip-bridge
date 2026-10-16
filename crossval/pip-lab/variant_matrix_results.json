@@ -1,0 +1,427 @@
+{
+  "sectors": {
+    "semicap": [
+      "AMAT",
+      "LRCX"
+    ],
+    "memory": [
+      "MU"
+    ],
+    "optical": [
+      "COHR",
+      "GLW"
+    ],
+    "megatech": [
+      "MSFT",
+      "AAPL",
+      "GOOGL",
+      "META",
+      "AMZN"
+    ],
+    "semis": [
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "INTC",
+      "QCOM"
+    ],
+    "other": [
+      "PLTR",
+      "SNOW",
+      "NFLX"
+    ]
+  },
+  "results": {
+    "semicap": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 42,
+        "wins": 19,
+        "win_rate": 0.4524,
+        "net_pl_total": 360.13,
+        "net_per_trade": 8.57,
+        "stops": 18,
+        "time_exits": 24
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 49,
+        "wins": 23,
+        "win_rate": 0.4694,
+        "net_pl_total": 679.76,
+        "net_per_trade": 13.87,
+        "stops": 21,
+        "time_exits": 28
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 38,
+        "wins": 19,
+        "win_rate": 0.5,
+        "net_pl_total": 1114.97,
+        "net_per_trade": 29.34,
+        "stops": 15,
+        "time_exits": 23
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 49,
+        "wins": 18,
+        "win_rate": 0.3673,
+        "net_pl_total": -3166.38,
+        "net_per_trade": -64.62,
+        "stops": 14,
+        "time_exits": 35
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 52,
+        "wins": 18,
+        "win_rate": 0.3462,
+        "net_pl_total": -5126.88,
+        "net_per_trade": -98.59,
+        "stops": 23,
+        "time_exits": 29
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 63,
+        "wins": 19,
+        "win_rate": 0.3016,
+        "net_pl_total": -6986.86,
+        "net_per_trade": -110.9,
+        "stops": 38,
+        "time_exits": 25
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 40,
+        "wins": 11,
+        "win_rate": 0.275,
+        "net_pl_total": -3603.1,
+        "net_per_trade": -90.08,
+        "stops": 25,
+        "time_exits": 15
+      }
+    },
+    "memory": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 24,
+        "wins": 12,
+        "win_rate": 0.5,
+        "net_pl_total": 3176.38,
+        "net_per_trade": 132.35,
+        "stops": 9,
+        "time_exits": 15
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 29,
+        "wins": 15,
+        "win_rate": 0.5172,
+        "net_pl_total": 2568.03,
+        "net_per_trade": 88.55,
+        "stops": 10,
+        "time_exits": 19
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 22,
+        "wins": 11,
+        "win_rate": 0.5,
+        "net_pl_total": 3252.16,
+        "net_per_trade": 147.83,
+        "stops": 8,
+        "time_exits": 14
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 30,
+        "wins": 14,
+        "win_rate": 0.4667,
+        "net_pl_total": 1922.99,
+        "net_per_trade": 64.1,
+        "stops": 8,
+        "time_exits": 22
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 33,
+        "wins": 14,
+        "win_rate": 0.4242,
+        "net_pl_total": 1156.36,
+        "net_per_trade": 35.04,
+        "stops": 13,
+        "time_exits": 20
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 32,
+        "wins": 15,
+        "win_rate": 0.4688,
+        "net_pl_total": 3570.58,
+        "net_per_trade": 111.58,
+        "stops": 17,
+        "time_exits": 15
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 12,
+        "wins": 6,
+        "win_rate": 0.5,
+        "net_pl_total": 37.21,
+        "net_per_trade": 3.1,
+        "stops": 4,
+        "time_exits": 8
+      }
+    },
+    "optical": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 53,
+        "wins": 22,
+        "win_rate": 0.4151,
+        "net_pl_total": -4913.64,
+        "net_per_trade": -92.71,
+        "stops": 25,
+        "time_exits": 28
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 64,
+        "wins": 24,
+        "win_rate": 0.375,
+        "net_pl_total": -7672.83,
+        "net_per_trade": -119.89,
+        "stops": 32,
+        "time_exits": 32
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 47,
+        "wins": 18,
+        "win_rate": 0.383,
+        "net_pl_total": -4270.34,
+        "net_per_trade": -90.86,
+        "stops": 22,
+        "time_exits": 25
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 59,
+        "wins": 25,
+        "win_rate": 0.4237,
+        "net_pl_total": -9661.29,
+        "net_per_trade": -163.75,
+        "stops": 24,
+        "time_exits": 35
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 55,
+        "wins": 22,
+        "win_rate": 0.4,
+        "net_pl_total": -9460.68,
+        "net_per_trade": -172.01,
+        "stops": 27,
+        "time_exits": 28
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 62,
+        "wins": 23,
+        "win_rate": 0.371,
+        "net_pl_total": -2977.05,
+        "net_per_trade": -48.02,
+        "stops": 35,
+        "time_exits": 27
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 25,
+        "wins": 9,
+        "win_rate": 0.36,
+        "net_pl_total": -2397.72,
+        "net_per_trade": -95.91,
+        "stops": 11,
+        "time_exits": 14
+      }
+    },
+    "megatech": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 97,
+        "wins": 38,
+        "win_rate": 0.3918,
+        "net_pl_total": -4778.05,
+        "net_per_trade": -49.26,
+        "stops": 35,
+        "time_exits": 62
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 113,
+        "wins": 46,
+        "win_rate": 0.4071,
+        "net_pl_total": -5723.65,
+        "net_per_trade": -50.65,
+        "stops": 45,
+        "time_exits": 68
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 84,
+        "wins": 32,
+        "win_rate": 0.381,
+        "net_pl_total": -5641.43,
+        "net_per_trade": -67.16,
+        "stops": 33,
+        "time_exits": 51
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 104,
+        "wins": 43,
+        "win_rate": 0.4135,
+        "net_pl_total": -7115.67,
+        "net_per_trade": -68.42,
+        "stops": 30,
+        "time_exits": 74
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 95,
+        "wins": 34,
+        "win_rate": 0.3579,
+        "net_pl_total": -7861.19,
+        "net_per_trade": -82.75,
+        "stops": 29,
+        "time_exits": 66
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 162,
+        "wins": 56,
+        "win_rate": 0.3457,
+        "net_pl_total": -11061.28,
+        "net_per_trade": -68.28,
+        "stops": 83,
+        "time_exits": 79
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 62,
+        "wins": 13,
+        "win_rate": 0.2097,
+        "net_pl_total": -7664.4,
+        "net_per_trade": -123.62,
+        "stops": 41,
+        "time_exits": 21
+      }
+    },
+    "semis": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 145,
+        "wins": 63,
+        "win_rate": 0.4345,
+        "net_pl_total": 13912.53,
+        "net_per_trade": 95.95,
+        "stops": 66,
+        "time_exits": 79
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 166,
+        "wins": 73,
+        "win_rate": 0.4398,
+        "net_pl_total": 18386.69,
+        "net_per_trade": 110.76,
+        "stops": 75,
+        "time_exits": 91
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 132,
+        "wins": 56,
+        "win_rate": 0.4242,
+        "net_pl_total": 9991.07,
+        "net_per_trade": 75.69,
+        "stops": 61,
+        "time_exits": 71
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 169,
+        "wins": 68,
+        "win_rate": 0.4024,
+        "net_pl_total": -1554.41,
+        "net_per_trade": -9.2,
+        "stops": 59,
+        "time_exits": 110
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 167,
+        "wins": 69,
+        "win_rate": 0.4132,
+        "net_pl_total": 1259.93,
+        "net_per_trade": 7.54,
+        "stops": 62,
+        "time_exits": 105
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 196,
+        "wins": 70,
+        "win_rate": 0.3571,
+        "net_pl_total": -8262.11,
+        "net_per_trade": -42.15,
+        "stops": 105,
+        "time_exits": 91
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 71,
+        "wins": 25,
+        "win_rate": 0.3521,
+        "net_pl_total": -4582.01,
+        "net_per_trade": -64.54,
+        "stops": 39,
+        "time_exits": 32
+      }
+    },
+    "other": {
+      "V1_20D-close_10d-hold": {
+        "n_trades": 73,
+        "wins": 27,
+        "win_rate": 0.3699,
+        "net_pl_total": 6941.31,
+        "net_per_trade": 95.09,
+        "stops": 36,
+        "time_exits": 37
+      },
+      "V2_10D-close_10d-hold": {
+        "n_trades": 82,
+        "wins": 34,
+        "win_rate": 0.4146,
+        "net_pl_total": 7346.09,
+        "net_per_trade": 89.59,
+        "stops": 39,
+        "time_exits": 43
+      },
+      "V3_30D-close_10d-hold": {
+        "n_trades": 63,
+        "wins": 25,
+        "win_rate": 0.3968,
+        "net_pl_total": 8974.62,
+        "net_per_trade": 142.45,
+        "stops": 31,
+        "time_exits": 32
+      },
+      "V4_20D-close_5d-hold": {
+        "n_trades": 83,
+        "wins": 35,
+        "win_rate": 0.4217,
+        "net_pl_total": -3630.47,
+        "net_per_trade": -43.74,
+        "stops": 27,
+        "time_exits": 56
+      },
+      "V5_10D-high_5d-hold": {
+        "n_trades": 79,
+        "wins": 31,
+        "win_rate": 0.3924,
+        "net_pl_total": -5538.51,
+        "net_per_trade": -70.11,
+        "stops": 27,
+        "time_exits": 52
+      },
+      "V6_pullback-MA10_5d-hold": {
+        "n_trades": 96,
+        "wins": 36,
+        "win_rate": 0.375,
+        "net_pl_total": -6733.56,
+        "net_per_trade": -70.14,
+        "stops": 52,
+        "time_exits": 44
+      },
+      "V7_contraction-080_10D-high_5d-hold": {
+        "n_trades": 28,
+        "wins": 15,
+        "win_rate": 0.5357,
+        "net_pl_total": -1684.28,
+        "net_per_trade": -60.15,
+        "stops": 9,
+        "time_exits": 19
+      }
+    }
+  }
+}
