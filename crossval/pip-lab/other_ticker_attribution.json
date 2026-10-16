@@ -1,0 +1,1128 @@
+{
+  "sector": "other",
+  "signal": "R2 CLOSE-20D / V1",
+  "methodology": {
+    "data": "local data_4y CSVs; variant_matrix.load_bars positional loader",
+    "entry": "close >= 1.010 * prior 20-bar max close; volume >= 1.25 * prior 20-bar mean volume",
+    "stop": "close < trigger level C20 (prior 20-bar max close at entry) \u2014 RULEBOOK R2 invalidation, corrected 2026-10-14 session 6 (prior version used prior-20D minimum close; old output preserved in other_ticker_attribution_minclose_stop.json)",
+    "harness_difference": "none after correction \u2014 stop now matches variant_matrix V1 (close < open_pos['level']) and the rulebook",
+    "hold_bars": 10,
+    "warmup_bars": 30,
+    "notional": 7500.0,
+    "flat_round_trip_cost": 75.0,
+    "entry_fill": "entry close * 1.001",
+    "exit_fill": "exit close * 0.999",
+    "gross_definition": "P/L after harness fill slippage, before flat round-trip cost",
+    "net_definition": "gross minus $75 (1% of $7,500)",
+    "win_definition": "net P/L > 0; losses are net P/L < 0",
+    "year_attribution": "exit year; 2022 reported separately if present",
+    "position_policy": "one open position per ticker; no same-bar re-entry; stop before time exit; unclosed final positions excluded",
+    "prices": "unadjusted Close, matching harness"
+  },
+  "tickers": {
+    "PLTR": {
+      "n_trades": 33,
+      "wins": 12,
+      "win_rate": 0.3636,
+      "net_pl_total": 1883.32,
+      "net_per_trade": 57.07,
+      "stops": 19,
+      "time_exits": 14,
+      "losses": 21,
+      "breakevens": 0,
+      "gross_pl_total": 4358.32,
+      "year_net_pl": {
+        "2022": 0,
+        "2023": -776.82,
+        "2024": 1535.16,
+        "2025": 1957.75,
+        "2026": -832.77
+      },
+      "data_coverage": {
+        "bars": 1011,
+        "first_date": "2022-10-03",
+        "last_date": "2026-10-13"
+      },
+      "unclosed_position": {
+        "index": 1007,
+        "entry_date": "2026-10-08",
+        "entry_close": 198.77999877929688,
+        "stop_level": 194.1199951171875
+      },
+      "top_3_trades": [
+        {
+          "entry_date": "2025-02-03",
+          "exit_date": "2025-02-18",
+          "entry_close": 83.73999786376953,
+          "exit_close": 124.62000274658203,
+          "stop_level": 82.48999786376953,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 3639.03,
+          "net_pl": 3564.03
+        },
+        {
+          "entry_date": "2023-05-09",
+          "exit_date": "2023-05-23",
+          "entry_close": 9.550000190734863,
+          "exit_close": 12.640000343322754,
+          "stop_level": 8.8100004196167,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 2406.87,
+          "net_pl": 2331.87
+        },
+        {
+          "entry_date": "2024-11-05",
+          "exit_date": "2024-11-19",
+          "entry_close": 51.130001068115234,
+          "exit_close": 62.97999954223633,
+          "stop_level": 44.970001220703125,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1719.76,
+          "net_pl": 1644.76
+        }
+      ],
+      "bottom_3_trades": [
+        {
+          "entry_date": "2023-07-31",
+          "exit_date": "2023-08-07",
+          "entry_close": 19.84000015258789,
+          "exit_close": 17.989999771118164,
+          "stop_level": 18.079999923706055,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -712.93,
+          "net_pl": -787.93
+        },
+        {
+          "entry_date": "2026-05-29",
+          "exit_date": "2026-06-03",
+          "entry_close": 156.5399932861328,
+          "exit_close": 142.1999969482422,
+          "stop_level": 146.02999877929688,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -700.66,
+          "net_pl": -775.66
+        },
+        {
+          "entry_date": "2024-05-03",
+          "exit_date": "2024-05-07",
+          "entry_close": 23.329999923706055,
+          "exit_close": 21.399999618530273,
+          "stop_level": 23.0,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -634.19,
+          "net_pl": -709.19
+        }
+      ],
+      "trades": [
+        {
+          "entry_date": "2023-01-27",
+          "exit_date": "2023-01-30",
+          "entry_close": 7.550000190734863,
+          "exit_close": 7.369999885559082,
+          "stop_level": 7.380000114440918,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -193.44,
+          "net_pl": -268.44
+        },
+        {
+          "entry_date": "2023-01-31",
+          "exit_date": "2023-02-10",
+          "entry_close": 7.78000020980835,
+          "exit_close": 7.510000228881836,
+          "stop_level": 7.550000190734863,
+          "exit_reason": "stop",
+          "holding_bars": 8,
+          "gross_pl": -274.75,
+          "net_pl": -349.75
+        },
+        {
+          "entry_date": "2023-02-14",
+          "exit_date": "2023-02-21",
+          "entry_close": 9.220000267028809,
+          "exit_close": 8.470000267028809,
+          "stop_level": 8.989999771118164,
+          "exit_reason": "stop",
+          "holding_bars": 4,
+          "gross_pl": -623.85,
+          "net_pl": -698.85
+        },
+        {
+          "entry_date": "2023-04-11",
+          "exit_date": "2023-04-12",
+          "entry_close": 8.609999656677246,
+          "exit_close": 8.329999923706055,
+          "stop_level": 8.449999809265137,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -258.4,
+          "net_pl": -333.4
+        },
+        {
+          "entry_date": "2023-04-14",
+          "exit_date": "2023-04-19",
+          "entry_close": 8.8100004196167,
+          "exit_close": 8.489999771118164,
+          "stop_level": 8.609999656677246,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -286.86,
+          "net_pl": -361.86
+        },
+        {
+          "entry_date": "2023-05-09",
+          "exit_date": "2023-05-23",
+          "entry_close": 9.550000190734863,
+          "exit_close": 12.640000343322754,
+          "stop_level": 8.8100004196167,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 2406.87,
+          "net_pl": 2331.87
+        },
+        {
+          "entry_date": "2023-05-25",
+          "exit_date": "2023-06-09",
+          "entry_close": 12.84000015258789,
+          "exit_close": 15.020000457763672,
+          "stop_level": 12.640000343322754,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1255.84,
+          "net_pl": 1180.84
+        },
+        {
+          "entry_date": "2023-07-18",
+          "exit_date": "2023-07-20",
+          "entry_close": 18.079999923706055,
+          "exit_close": 17.1299991607666,
+          "stop_level": 17.399999618530273,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -408.28,
+          "net_pl": -483.28
+        },
+        {
+          "entry_date": "2023-07-31",
+          "exit_date": "2023-08-07",
+          "entry_close": 19.84000015258789,
+          "exit_close": 17.989999771118164,
+          "stop_level": 18.079999923706055,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -712.93,
+          "net_pl": -787.93
+        },
+        {
+          "entry_date": "2023-09-29",
+          "exit_date": "2023-10-03",
+          "entry_close": 16.0,
+          "exit_close": 14.899999618530273,
+          "stop_level": 15.829999923706055,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -529.58,
+          "net_pl": -604.58
+        },
+        {
+          "entry_date": "2023-10-06",
+          "exit_date": "2023-10-20",
+          "entry_close": 16.610000610351562,
+          "exit_close": 16.110000610351562,
+          "stop_level": 16.0,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -240.3,
+          "net_pl": -315.3
+        },
+        {
+          "entry_date": "2023-11-03",
+          "exit_date": "2023-11-17",
+          "entry_close": 18.889999389648438,
+          "exit_close": 20.489999771118164,
+          "stop_level": 17.969999313354492,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 619.0,
+          "net_pl": 544.0
+        },
+        {
+          "entry_date": "2023-11-20",
+          "exit_date": "2023-11-21",
+          "entry_close": 21.34000015258789,
+          "exit_close": 19.799999237060547,
+          "stop_level": 20.489999771118164,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -555.14,
+          "net_pl": -630.14
+        },
+        {
+          "entry_date": "2024-02-06",
+          "exit_date": "2024-02-21",
+          "entry_close": 21.8700008392334,
+          "exit_close": 22.739999771118164,
+          "stop_level": 17.600000381469727,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 282.77,
+          "net_pl": 207.77
+        },
+        {
+          "entry_date": "2024-03-06",
+          "exit_date": "2024-03-11",
+          "entry_close": 26.15999984741211,
+          "exit_close": 25.350000381469727,
+          "stop_level": 25.40999984741211,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -246.75,
+          "net_pl": -321.75
+        },
+        {
+          "entry_date": "2024-05-03",
+          "exit_date": "2024-05-07",
+          "entry_close": 23.329999923706055,
+          "exit_close": 21.399999618530273,
+          "stop_level": 23.0,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -634.19,
+          "net_pl": -709.19
+        },
+        {
+          "entry_date": "2024-06-06",
+          "exit_date": "2024-06-21",
+          "entry_close": 23.790000915527344,
+          "exit_close": 23.84000015258789,
+          "stop_level": 22.959999084472656,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 0.75,
+          "net_pl": -74.25
+        },
+        {
+          "entry_date": "2024-07-08",
+          "exit_date": "2024-07-22",
+          "entry_close": 27.700000762939453,
+          "exit_close": 28.459999084472656,
+          "stop_level": 27.229999542236328,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 190.38,
+          "net_pl": 115.38
+        },
+        {
+          "entry_date": "2024-08-08",
+          "exit_date": "2024-08-22",
+          "entry_close": 29.280000686645508,
+          "exit_close": 31.920000076293945,
+          "stop_level": 28.809999465942383,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 659.89,
+          "net_pl": 584.89
+        },
+        {
+          "entry_date": "2024-09-09",
+          "exit_date": "2024-09-23",
+          "entry_close": 34.599998474121094,
+          "exit_close": 37.95000076293945,
+          "stop_level": 32.540000915527344,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 709.72,
+          "net_pl": 634.72
+        },
+        {
+          "entry_date": "2024-11-05",
+          "exit_date": "2024-11-19",
+          "entry_close": 51.130001068115234,
+          "exit_close": 62.97999954223633,
+          "stop_level": 44.970001220703125,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1719.76,
+          "net_pl": 1644.76
+        },
+        {
+          "entry_date": "2024-12-20",
+          "exit_date": "2024-12-31",
+          "entry_close": 80.55000305175781,
+          "exit_close": 75.62999725341797,
+          "stop_level": 76.33999633789062,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -472.17,
+          "net_pl": -547.17
+        },
+        {
+          "entry_date": "2025-02-03",
+          "exit_date": "2025-02-18",
+          "entry_close": 83.73999786376953,
+          "exit_close": 124.62000274658203,
+          "stop_level": 82.48999786376953,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 3639.03,
+          "net_pl": 3564.03
+        },
+        {
+          "entry_date": "2025-05-13",
+          "exit_date": "2025-05-21",
+          "entry_close": 128.10000610351562,
+          "exit_close": 120.58000183105469,
+          "stop_level": 124.27999877929688,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -454.39,
+          "net_pl": -529.39
+        },
+        {
+          "entry_date": "2025-05-30",
+          "exit_date": "2025-06-04",
+          "entry_close": 131.77999877929688,
+          "exit_close": 130.00999450683594,
+          "stop_level": 130.17999267578125,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -115.52,
+          "net_pl": -190.52
+        },
+        {
+          "entry_date": "2025-08-04",
+          "exit_date": "2025-08-18",
+          "entry_close": 160.66000366210938,
+          "exit_close": 174.02999877929688,
+          "stop_level": 158.8000030517578,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 607.91,
+          "net_pl": 532.91
+        },
+        {
+          "entry_date": "2025-09-19",
+          "exit_date": "2025-10-03",
+          "entry_close": 182.38999938964844,
+          "exit_close": 173.07000732421875,
+          "stop_level": 176.97000122070312,
+          "exit_reason": "stop",
+          "holding_bars": 10,
+          "gross_pl": -397.46,
+          "net_pl": -472.46
+        },
+        {
+          "entry_date": "2025-10-29",
+          "exit_date": "2025-11-05",
+          "entry_close": 198.80999755859375,
+          "exit_close": 187.89999389648438,
+          "stop_level": 189.60000610351562,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -425.74,
+          "net_pl": -500.74
+        },
+        {
+          "entry_date": "2025-12-19",
+          "exit_date": "2025-12-29",
+          "entry_close": 193.3800048828125,
+          "exit_close": 184.17999267578125,
+          "stop_level": 187.91000366210938,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -371.08,
+          "net_pl": -446.08
+        },
+        {
+          "entry_date": "2026-03-06",
+          "exit_date": "2026-03-10",
+          "entry_close": 157.16000366210938,
+          "exit_close": 151.13999938964844,
+          "stop_level": 153.19000244140625,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -301.7,
+          "net_pl": -376.7
+        },
+        {
+          "entry_date": "2026-05-29",
+          "exit_date": "2026-06-03",
+          "entry_close": 156.5399932861328,
+          "exit_close": 142.1999969482422,
+          "stop_level": 146.02999877929688,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -700.66,
+          "net_pl": -775.66
+        },
+        {
+          "entry_date": "2026-08-04",
+          "exit_date": "2026-08-18",
+          "entry_close": 162.66000366210938,
+          "exit_close": 171.5399932861328,
+          "stop_level": 134.85000610351562,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 393.64,
+          "net_pl": 318.64
+        },
+        {
+          "entry_date": "2026-09-23",
+          "exit_date": "2026-10-07",
+          "entry_close": 191.7899932861328,
+          "exit_close": 194.1199951171875,
+          "stop_level": 186.3800048828125,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 75.95,
+          "net_pl": 0.95
+        }
+      ]
+    },
+    "SNOW": {
+      "n_trades": 20,
+      "wins": 7,
+      "win_rate": 0.35,
+      "net_pl_total": 5521.67,
+      "net_per_trade": 276.08,
+      "stops": 9,
+      "time_exits": 11,
+      "losses": 13,
+      "breakevens": 0,
+      "gross_pl_total": 7021.67,
+      "year_net_pl": {
+        "2022": 0,
+        "2023": 413.2,
+        "2024": 616.55,
+        "2025": -555.14,
+        "2026": 5047.06
+      },
+      "data_coverage": {
+        "bars": 1011,
+        "first_date": "2022-10-03",
+        "last_date": "2026-10-13"
+      },
+      "unclosed_position": {
+        "index": 1008,
+        "entry_date": "2026-10-09",
+        "entry_close": 368.8900146484375,
+        "stop_level": 343.3999938964844
+      },
+      "top_3_trades": [
+        {
+          "entry_date": "2026-05-18",
+          "exit_date": "2026-06-02",
+          "entry_close": 164.24000549316406,
+          "exit_close": 261.1400146484375,
+          "stop_level": 157.47000122070312,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 4401.1,
+          "net_pl": 4326.1
+        },
+        {
+          "entry_date": "2024-11-12",
+          "exit_date": "2024-11-26",
+          "entry_close": 125.45999908447266,
+          "exit_close": 171.27999877929688,
+          "stop_level": 123.54000091552734,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 2718.66,
+          "net_pl": 2643.66
+        },
+        {
+          "entry_date": "2023-05-04",
+          "exit_date": "2023-05-18",
+          "entry_close": 155.27000427246094,
+          "exit_close": 184.30999755859375,
+          "stop_level": 148.77000427246094,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1384.93,
+          "net_pl": 1309.93
+        }
+      ],
+      "bottom_3_trades": [
+        {
+          "entry_date": "2024-08-21",
+          "exit_date": "2024-08-22",
+          "entry_close": 135.05999755859375,
+          "exit_close": 115.20999908447266,
+          "stop_level": 131.9199981689453,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -1115.07,
+          "net_pl": -1190.07
+        },
+        {
+          "entry_date": "2023-03-31",
+          "exit_date": "2023-04-11",
+          "entry_close": 154.2899932861328,
+          "exit_close": 139.19000244140625,
+          "stop_level": 142.64999389648438,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -747.53,
+          "net_pl": -822.53
+        },
+        {
+          "entry_date": "2024-12-04",
+          "exit_date": "2024-12-10",
+          "entry_close": 186.50999450683594,
+          "exit_close": 171.5500030517578,
+          "stop_level": 175.94000244140625,
+          "exit_reason": "stop",
+          "holding_bars": 4,
+          "gross_pl": -615.36,
+          "net_pl": -690.36
+        }
+      ],
+      "trades": [
+        {
+          "entry_date": "2023-01-27",
+          "exit_date": "2023-02-10",
+          "entry_close": 159.36000061035156,
+          "exit_close": 157.3300018310547,
+          "stop_level": 152.4499969482422,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -110.33,
+          "net_pl": -185.33
+        },
+        {
+          "entry_date": "2023-03-31",
+          "exit_date": "2023-04-11",
+          "entry_close": 154.2899932861328,
+          "exit_close": 139.19000244140625,
+          "stop_level": 142.64999389648438,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -747.53,
+          "net_pl": -822.53
+        },
+        {
+          "entry_date": "2023-05-04",
+          "exit_date": "2023-05-18",
+          "entry_close": 155.27000427246094,
+          "exit_close": 184.30999755859375,
+          "stop_level": 148.77000427246094,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1384.93,
+          "net_pl": 1309.93
+        },
+        {
+          "entry_date": "2023-09-08",
+          "exit_date": "2023-09-19",
+          "entry_close": 165.9499969482422,
+          "exit_close": 159.74000549316406,
+          "stop_level": 159.83999633789062,
+          "exit_reason": "stop",
+          "holding_bars": 7,
+          "gross_pl": -295.08,
+          "net_pl": -370.08
+        },
+        {
+          "entry_date": "2023-11-29",
+          "exit_date": "2023-12-13",
+          "entry_close": 175.32000732421875,
+          "exit_close": 196.5500030517578,
+          "stop_level": 171.5500030517578,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 891.4,
+          "net_pl": 816.4
+        },
+        {
+          "entry_date": "2023-12-14",
+          "exit_date": "2023-12-20",
+          "entry_close": 200.86000061035156,
+          "exit_close": 194.27999877929688,
+          "stop_level": 196.5500030517578,
+          "exit_reason": "stop",
+          "holding_bars": 4,
+          "gross_pl": -260.19,
+          "net_pl": -335.19
+        },
+        {
+          "entry_date": "2024-01-23",
+          "exit_date": "2024-01-31",
+          "entry_close": 205.5800018310547,
+          "exit_close": 195.63999938964844,
+          "stop_level": 201.22999572753906,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -376.89,
+          "net_pl": -451.89
+        },
+        {
+          "entry_date": "2024-02-02",
+          "exit_date": "2024-02-16",
+          "entry_close": 218.75999450683594,
+          "exit_close": 230.30999755859375,
+          "stop_level": 209.5399932861328,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 380.21,
+          "net_pl": 305.21
+        },
+        {
+          "entry_date": "2024-08-21",
+          "exit_date": "2024-08-22",
+          "entry_close": 135.05999755859375,
+          "exit_close": 115.20999908447266,
+          "stop_level": 131.9199981689453,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -1115.07,
+          "net_pl": -1190.07
+        },
+        {
+          "entry_date": "2024-11-12",
+          "exit_date": "2024-11-26",
+          "entry_close": 125.45999908447266,
+          "exit_close": 171.27999877929688,
+          "stop_level": 123.54000091552734,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 2718.66,
+          "net_pl": 2643.66
+        },
+        {
+          "entry_date": "2024-12-04",
+          "exit_date": "2024-12-10",
+          "entry_close": 186.50999450683594,
+          "exit_close": 171.5500030517578,
+          "stop_level": 175.94000244140625,
+          "exit_reason": "stop",
+          "holding_bars": 4,
+          "gross_pl": -615.36,
+          "net_pl": -690.36
+        },
+        {
+          "entry_date": "2025-01-28",
+          "exit_date": "2025-02-11",
+          "entry_close": 188.02000427246094,
+          "exit_close": 183.5500030517578,
+          "stop_level": 177.49000549316406,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -192.93,
+          "net_pl": -267.93
+        },
+        {
+          "entry_date": "2025-05-12",
+          "exit_date": "2025-05-27",
+          "entry_close": 180.5399932861328,
+          "exit_close": 206.35000610351562,
+          "stop_level": 174.13999938964844,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1055.07,
+          "net_pl": 980.07
+        },
+        {
+          "entry_date": "2025-06-24",
+          "exit_date": "2025-07-09",
+          "entry_close": 223.13999938964844,
+          "exit_close": 221.89999389648438,
+          "stop_level": 213.7100067138672,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -56.58,
+          "net_pl": -131.58
+        },
+        {
+          "entry_date": "2025-08-28",
+          "exit_date": "2025-09-04",
+          "entry_close": 241.0,
+          "exit_close": 221.89999389648438,
+          "stop_level": 223.5,
+          "exit_reason": "stop",
+          "holding_bars": 4,
+          "gross_pl": -608.2,
+          "net_pl": -683.2
+        },
+        {
+          "entry_date": "2025-10-02",
+          "exit_date": "2025-10-16",
+          "entry_close": 240.5399932861328,
+          "exit_close": 240.05999755859375,
+          "stop_level": 230.5500030517578,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -29.92,
+          "net_pl": -104.92
+        },
+        {
+          "entry_date": "2025-10-31",
+          "exit_date": "2025-11-04",
+          "entry_close": 274.8800048828125,
+          "exit_close": 265.4200134277344,
+          "stop_level": 271.17999267578125,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -272.58,
+          "net_pl": -347.58
+        },
+        {
+          "entry_date": "2026-05-18",
+          "exit_date": "2026-06-02",
+          "entry_close": 164.24000549316406,
+          "exit_close": 261.1400146484375,
+          "stop_level": 157.47000122070312,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 4401.1,
+          "net_pl": 4326.1
+        },
+        {
+          "entry_date": "2026-07-29",
+          "exit_date": "2026-08-12",
+          "entry_close": 282.8999938964844,
+          "exit_close": 332.260009765625,
+          "stop_level": 275.94000244140625,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 1290.99,
+          "net_pl": 1215.99
+        },
+        {
+          "entry_date": "2026-09-03",
+          "exit_date": "2026-09-04",
+          "entry_close": 356.4700012207031,
+          "exit_close": 337.17999267578125,
+          "stop_level": 337.3800048828125,
+          "exit_reason": "stop",
+          "holding_bars": 1,
+          "gross_pl": -420.03,
+          "net_pl": -495.03
+        }
+      ]
+    },
+    "NFLX": {
+      "n_trades": 20,
+      "wins": 8,
+      "win_rate": 0.4,
+      "net_pl_total": -463.68,
+      "net_per_trade": -23.18,
+      "stops": 8,
+      "time_exits": 12,
+      "losses": 12,
+      "breakevens": 0,
+      "gross_pl_total": 1036.32,
+      "year_net_pl": {
+        "2022": -358.97,
+        "2023": -115.37,
+        "2024": -538.65,
+        "2025": 711.63,
+        "2026": -162.32
+      },
+      "data_coverage": {
+        "bars": 1011,
+        "first_date": "2022-10-03",
+        "last_date": "2026-10-13"
+      },
+      "unclosed_position": null,
+      "top_3_trades": [
+        {
+          "entry_date": "2025-04-22",
+          "exit_date": "2025-05-06",
+          "entry_close": 104.03399658203125,
+          "exit_close": 113.76899719238281,
+          "stop_level": 99.72799682617188,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 685.43,
+          "net_pl": 610.43
+        },
+        {
+          "entry_date": "2023-05-18",
+          "exit_date": "2023-06-02",
+          "entry_close": 37.12900161743164,
+          "exit_close": 40.047000885009766,
+          "stop_level": 34.47600173950195,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 573.27,
+          "net_pl": 498.27
+        },
+        {
+          "entry_date": "2023-01-20",
+          "exit_date": "2023-02-03",
+          "entry_close": 34.25,
+          "exit_close": 36.59000015258789,
+          "stop_level": 33.28200149536133,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 496.4,
+          "net_pl": 421.4
+        }
+      ],
+      "bottom_3_trades": [
+        {
+          "entry_date": "2023-07-18",
+          "exit_date": "2023-07-20",
+          "entry_close": 47.47999954223633,
+          "exit_close": 43.742000579833984,
+          "stop_level": 45.03799819946289,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -604.26,
+          "net_pl": -679.26
+        },
+        {
+          "entry_date": "2023-12-18",
+          "exit_date": "2024-01-02",
+          "entry_close": 48.61199951171875,
+          "exit_close": 46.849998474121094,
+          "stop_level": 47.99800109863281,
+          "exit_reason": "stop",
+          "holding_bars": 9,
+          "gross_pl": -286.29,
+          "net_pl": -361.29
+        },
+        {
+          "entry_date": "2022-12-01",
+          "exit_date": "2022-12-06",
+          "entry_close": 31.69499969482422,
+          "exit_close": 30.555999755859375,
+          "stop_level": 31.020000457763672,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -283.97,
+          "net_pl": -358.97
+        }
+      ],
+      "trades": [
+        {
+          "entry_date": "2022-12-01",
+          "exit_date": "2022-12-06",
+          "entry_close": 31.69499969482422,
+          "exit_close": 30.555999755859375,
+          "stop_level": 31.020000457763672,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -283.97,
+          "net_pl": -358.97
+        },
+        {
+          "entry_date": "2023-01-10",
+          "exit_date": "2023-01-19",
+          "entry_close": 32.75400161743164,
+          "exit_close": 31.577999114990234,
+          "stop_level": 32.034000396728516,
+          "exit_reason": "stop",
+          "holding_bars": 6,
+          "gross_pl": -283.73,
+          "net_pl": -358.73
+        },
+        {
+          "entry_date": "2023-01-20",
+          "exit_date": "2023-02-03",
+          "entry_close": 34.25,
+          "exit_close": 36.59000015258789,
+          "stop_level": 33.28200149536133,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 496.4,
+          "net_pl": 421.4
+        },
+        {
+          "entry_date": "2023-03-24",
+          "exit_date": "2023-04-10",
+          "entry_close": 32.8390007019043,
+          "exit_close": 33.89899826049805,
+          "stop_level": 32.303001403808594,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 226.62,
+          "net_pl": 151.62
+        },
+        {
+          "entry_date": "2023-05-18",
+          "exit_date": "2023-06-02",
+          "entry_close": 37.12900161743164,
+          "exit_close": 40.047000885009766,
+          "stop_level": 34.47600173950195,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 573.27,
+          "net_pl": 498.27
+        },
+        {
+          "entry_date": "2023-06-09",
+          "exit_date": "2023-06-26",
+          "entry_close": 42.00199890136719,
+          "exit_close": 41.59400177001953,
+          "stop_level": 40.9370002746582,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -87.69,
+          "net_pl": -162.69
+        },
+        {
+          "entry_date": "2023-07-18",
+          "exit_date": "2023-07-20",
+          "entry_close": 47.47999954223633,
+          "exit_close": 43.742000579833984,
+          "stop_level": 45.03799819946289,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -604.26,
+          "net_pl": -679.26
+        },
+        {
+          "entry_date": "2023-09-05",
+          "exit_date": "2023-09-12",
+          "entry_close": 44.86800003051758,
+          "exit_close": 43.46900177001953,
+          "stop_level": 44.07600021362305,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -248.37,
+          "net_pl": -323.37
+        },
+        {
+          "entry_date": "2023-10-19",
+          "exit_date": "2023-11-02",
+          "entry_close": 40.176998138427734,
+          "exit_close": 42.47100067138672,
+          "stop_level": 38.595001220703125,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 412.39,
+          "net_pl": 337.39
+        },
+        {
+          "entry_date": "2023-12-18",
+          "exit_date": "2024-01-02",
+          "entry_close": 48.61199951171875,
+          "exit_close": 46.849998474121094,
+          "stop_level": 47.99800109863281,
+          "exit_reason": "stop",
+          "holding_bars": 9,
+          "gross_pl": -286.29,
+          "net_pl": -361.29
+        },
+        {
+          "entry_date": "2024-01-24",
+          "exit_date": "2024-02-07",
+          "entry_close": 54.48699951171875,
+          "exit_close": 55.93000030517578,
+          "stop_level": 49.222999572753906,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 183.24,
+          "net_pl": 108.24
+        },
+        {
+          "entry_date": "2024-06-14",
+          "exit_date": "2024-07-01",
+          "entry_close": 66.93800354003906,
+          "exit_close": 67.36100006103516,
+          "stop_level": 65.46199798583984,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 32.31,
+          "net_pl": -42.69
+        },
+        {
+          "entry_date": "2024-08-20",
+          "exit_date": "2024-08-23",
+          "entry_close": 69.85399627685547,
+          "exit_close": 68.6729965209961,
+          "stop_level": 68.85299682617188,
+          "exit_reason": "stop",
+          "holding_bars": 3,
+          "gross_pl": -141.53,
+          "net_pl": -216.53
+        },
+        {
+          "entry_date": "2024-09-24",
+          "exit_date": "2024-10-01",
+          "entry_close": 72.22599792480469,
+          "exit_close": 70.61299896240234,
+          "stop_level": 70.69100189208984,
+          "exit_reason": "stop",
+          "holding_bars": 5,
+          "gross_pl": -182.15,
+          "net_pl": -257.15
+        },
+        {
+          "entry_date": "2024-10-18",
+          "exit_date": "2024-11-01",
+          "entry_close": 76.38899993896484,
+          "exit_close": 75.61000061035156,
+          "stop_level": 73.02899932861328,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -91.32,
+          "net_pl": -166.32
+        },
+        {
+          "entry_date": "2024-11-18",
+          "exit_date": "2024-12-03",
+          "entry_close": 84.70500183105469,
+          "exit_close": 90.21700286865234,
+          "stop_level": 83.72599792480469,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 472.09,
+          "net_pl": 397.09
+        },
+        {
+          "entry_date": "2025-01-22",
+          "exit_date": "2025-02-05",
+          "entry_close": 95.39900207519531,
+          "exit_close": 101.11100006103516,
+          "stop_level": 93.21199798583984,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 433.18,
+          "net_pl": 358.18
+        },
+        {
+          "entry_date": "2025-04-22",
+          "exit_date": "2025-05-06",
+          "entry_close": 104.03399658203125,
+          "exit_close": 113.76899719238281,
+          "stop_level": 99.72799682617188,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": 685.43,
+          "net_pl": 610.43
+        },
+        {
+          "entry_date": "2025-06-27",
+          "exit_date": "2025-07-01",
+          "entry_close": 132.31199645996094,
+          "exit_close": 129.36000061035156,
+          "stop_level": 130.66700744628906,
+          "exit_reason": "stop",
+          "holding_bars": 2,
+          "gross_pl": -181.98,
+          "net_pl": -256.98
+        },
+        {
+          "entry_date": "2026-02-27",
+          "exit_date": "2026-03-13",
+          "entry_close": 96.23999786376953,
+          "exit_close": 95.30999755859375,
+          "stop_level": 84.58999633789062,
+          "exit_reason": "time",
+          "holding_bars": 10,
+          "gross_pl": -87.32,
+          "net_pl": -162.32
+        }
+      ]
+    }
+  }
+}
