@@ -1,0 +1,93 @@
+{
+  "panel_id": "pip-lab",
+  "schema_version": "0.1",
+  "generated_at": "2026-10-16T07:15:00Z",
+  "banner": "PAPER / RESEARCH ONLY \u2014 no recommendations",
+  "sections": [
+    {
+      "section": "H3 forward test",
+      "rows": [
+        {
+          "label": "Trades",
+          "value": "1 of 15"
+        },
+        {
+          "label": "Cumulative net, 1% tier",
+          "value": "-$120.48"
+        },
+        {
+          "label": "Cumulative net, 20bps tier",
+          "value": "-$60.48"
+        },
+        {
+          "label": "Days since last signal",
+          "value": "1",
+          "note": "days"
+        }
+      ],
+      "falsifiers": [
+        {
+          "name": "H3 15-trade completion",
+          "binding": "Retire if cumulative net <= $0 at 1% tier after 15 trades; survival extends to 30, it does not validate",
+          "state": "1/15 trades \u2014 still running"
+        }
+      ]
+    },
+    {
+      "section": "R2 live",
+      "rows": [
+        {
+          "label": "Live trades",
+          "value": "0"
+        },
+        {
+          "label": "R2-TRAIL shadow",
+          "value": "0 of 20"
+        },
+        {
+          "label": "Semis 10-day challenger",
+          "value": "0 of 0"
+        }
+      ],
+      "falsifiers": [
+        {
+          "name": "R2 15-trade completion",
+          "binding": "Retire if cumulative net <= $0 at 1% tier after 15 trades",
+          "state": "0/15 trades \u2014 still running"
+        }
+      ]
+    },
+    {
+      "section": "Sprint tracks",
+      "rows": [
+        {
+          "label": "R2-SECTOR-X",
+          "value": "forged, awaiting Rook review"
+        },
+        {
+          "label": "H3 v2 stop redesign",
+          "value": "queued behind v1 outcome"
+        },
+        {
+          "label": "Charlie-dip trigger",
+          "value": "rerun accepted; trigger design pending"
+        }
+      ],
+      "falsifiers": []
+    },
+    {
+      "section": "Book equity",
+      "rows": [
+        {
+          "label": "Equity",
+          "value": "$99,879.52"
+        },
+        {
+          "label": "Open positions",
+          "value": "0"
+        }
+      ],
+      "falsifiers": []
+    }
+  ]
+}
